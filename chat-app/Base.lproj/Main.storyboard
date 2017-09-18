@@ -184,10 +184,10 @@
             </objects>
             <point key="canvasLocation" x="880.79999999999995" y="-229.83508245877064"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="lDW-br-Q5Z">
             <objects>
-                <viewController id="KAh-Df-5KT" sceneMemberID="viewController">
+                <viewController id="KAh-Df-5KT" customClass="LoginVC" customModule="chat_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="meD-SR-FB5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,6 +195,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7m-LL-B6w">
                                 <rect key="frame" x="339" y="20" width="28" height="28"/>
                                 <state key="normal" image="closeButton"/>
+                                <connections>
+                                    <action selector="onCloseBtnPressed:" destination="KAh-Df-5KT" eventType="touchUpInside" id="qH5-kN-CfA"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="8i7-U2-XmA">
                                 <rect key="frame" x="62.5" y="160" width="250" height="86"/>

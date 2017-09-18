@@ -18,4 +18,7 @@ class LoginVC: UIViewController {
 
    
 
+    @IBAction func onCloseBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
