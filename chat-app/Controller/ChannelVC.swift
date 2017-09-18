@@ -10,10 +10,17 @@ import UIKit
 
 class ChannelVC: UIViewController {
 
+    @IBOutlet weak var loginBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //set hamburger menu size
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
     }
-
+    
+    
+    @IBAction func onLoginButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_LOGIN, sender: nil)
+    }
+    
 }
