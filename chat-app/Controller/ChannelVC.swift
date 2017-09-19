@@ -12,6 +12,7 @@ class ChannelVC: UIViewController {
 
     @IBOutlet weak var loginBtn: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //set hamburger menu size
@@ -25,5 +26,7 @@ class ChannelVC: UIViewController {
     @IBAction func onCreateAccountBtnPressed(_ sender: Any) {
         
     }
+    
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {}
     
 }

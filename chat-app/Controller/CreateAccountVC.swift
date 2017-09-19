@@ -16,5 +16,8 @@ class CreateAccountVC: UIViewController {
         
     }
 
-
+    
+    @IBAction func onCloseBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: UNWIND, sender: nil)
+    }
 }

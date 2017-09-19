@@ -308,10 +308,10 @@
             </objects>
             <point key="canvasLocation" x="1669.5999999999999" y="-230.73463268365819"/>
         </scene>
-        <!--View Controller-->
+        <!--Create AccountVC-->
         <scene sceneID="09d-jv-Onv">
             <objects>
-                <viewController id="MrC-Tg-wkv" sceneMemberID="viewController">
+                <viewController id="MrC-Tg-wkv" customClass="CreateAccountVC" customModule="chat_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jqz-Ne-pNc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -321,6 +321,7 @@
                                 <state key="normal" image="closeButton"/>
                                 <connections>
                                     <action selector="onCloseBtnPressed:" destination="KAh-Df-5KT" eventType="touchUpInside" id="Qk0-fV-biX"/>
+                                    <action selector="onCloseBtnPressed:" destination="MrC-Tg-wkv" eventType="touchUpInside" id="dsf-9K-pKh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCv-nD-fRO">
@@ -454,8 +455,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kni-iQ-XHM"/>
                     </view>
+                    <connections>
+                        <segue destination="jOK-m1-b1q" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="saQ-Pl-O5b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XoP-7G-s4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="jOK-m1-b1q" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2453.5999999999999" y="-230.73463268365819"/>
         </scene>
