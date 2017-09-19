@@ -398,6 +398,7 @@
                                 <connections>
                                     <action selector="onCreateAccountBtnPressed:" destination="Dnn-ZS-ttP" eventType="touchUpInside" id="8ti-uv-kDM"/>
                                     <action selector="onCreateAccountBtnPressed:" destination="KAh-Df-5KT" eventType="touchUpInside" id="pbm-WI-8J2"/>
+                                    <action selector="onPickAvatarPressed:" destination="MrC-Tg-wkv" eventType="touchUpInside" id="DmJ-2e-7fT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSq-bN-6gX">
@@ -411,6 +412,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onCreateAccountPressed:" destination="MrC-Tg-wkv" eventType="touchUpInside" id="JEQ-6O-eT0"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="5WK-oR-5ec">
                                 <rect key="frame" x="137" y="299" width="100" height="100"/>
@@ -432,6 +436,7 @@
                                 <connections>
                                     <action selector="onCreateAccountBtnPressed:" destination="KAh-Df-5KT" eventType="touchUpInside" id="Z9D-0w-hHH"/>
                                     <action selector="onCreateAccountBtnPressed:" destination="Dnn-ZS-ttP" eventType="touchUpInside" id="xtZ-dK-E55"/>
+                                    <action selector="onPickBgColorPressed:" destination="MrC-Tg-wkv" eventType="touchUpInside" id="o3c-Yc-UXK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -456,6 +461,10 @@
                         <viewLayoutGuide key="safeArea" id="kni-iQ-XHM"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="fH6-dV-rmL" id="wx5-vz-Qdi"/>
+                        <outlet property="passwordTxt" destination="Mge-DQ-hPv" id="IMB-sg-Lsa"/>
+                        <outlet property="userImg" destination="5WK-oR-5ec" id="Khu-Hm-3Qc"/>
+                        <outlet property="usernameTxt" destination="N7C-3Q-0Oe" id="0fE-Xs-QHR"/>
                         <segue destination="jOK-m1-b1q" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="saQ-Pl-O5b"/>
                     </connections>
                 </viewController>
