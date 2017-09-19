@@ -16,6 +16,7 @@
 		BE4418681F6FC7A3009A8C67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4418671F6FC7A3009A8C67 /* Assets.xcassets */; };
 		BE44186B1F6FC7A3009A8C67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4418691F6FC7A3009A8C67 /* LaunchScreen.storyboard */; };
 		BE761B171F703400006A2ED7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE761B161F703400006A2ED7 /* LoginVC.swift */; };
+		BE761B191F70FCC9006A2ED7 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE761B181F70FCC9006A2ED7 /* CreateAccountVC.swift */; };
 		BE87116C1F6FF347006413DE /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE87116B1F6FF347006413DE /* ChatVC.swift */; };
 		BE87116E1F6FF35A006413DE /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE87116D1F6FF35A006413DE /* ChannelVC.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		BE44186A1F6FC7A3009A8C67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE44186C1F6FC7A3009A8C67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE761B161F703400006A2ED7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		BE761B181F70FCC9006A2ED7 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		BE87116B1F6FF347006413DE /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		BE87116D1F6FF35A006413DE /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		BE9D25B71F6FE967004A807B /* chat-app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "chat-app-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				BE87116B1F6FF347006413DE /* ChatVC.swift */,
 				BE87116D1F6FF35A006413DE /* ChannelVC.swift */,
 				BE761B161F703400006A2ED7 /* LoginVC.swift */,
+				BE761B181F70FCC9006A2ED7 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				BE87116C1F6FF347006413DE /* ChatVC.swift in Sources */,
 				BE87116E1F6FF35A006413DE /* ChannelVC.swift in Sources */,
+				BE761B191F70FCC9006A2ED7 /* CreateAccountVC.swift in Sources */,
 				BE761B171F703400006A2ED7 /* LoginVC.swift in Sources */,
 				BE0CFEA61F700CDA00401393 /* GradientView.swift in Sources */,
 				BE4418611F6FC7A3009A8C67 /* AppDelegate.swift in Sources */,

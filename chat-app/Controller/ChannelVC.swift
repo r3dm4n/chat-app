@@ -22,5 +22,8 @@ class ChannelVC: UIViewController {
     @IBAction func onLoginButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: TO_LOGIN, sender: nil)
     }
+    @IBAction func onCreateAccountBtnPressed(_ sender: Any) {
+        
+    }
     
 }
