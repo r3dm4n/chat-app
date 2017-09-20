@@ -24,6 +24,9 @@ let USER_EMAIL = "userEmail"
 //Colors
 let PURPULE_PLACEHOLDER = #colorLiteral(red: 0.3266413212, green: 0.4215201139, blue: 0.7752227187, alpha: 0.5)
 
+//Notification Constants
+let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
+
 //Heroku
 let BASE_URL = "https://r3dm4n-chat-app.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
