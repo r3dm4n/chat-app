@@ -16,6 +16,7 @@ class CreateAccountVC: UIViewController {
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var userImg: UIImageView!
 
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     //Variables
     var avatarName = "profileDefault"
     var avatarColor = "[0.5, 0.5, 0.5, 1]"
@@ -39,6 +40,9 @@ class CreateAccountVC: UIViewController {
 
 
     @IBAction func onCreateAccountPressed(_ sender: Any) {
+        spinner.isHidden = false
+        spinner.startAnimating()
+        
         guard let name = usernameTxt.text, usernameTxt.text != "" else { return }
         guard let email = emailTxt.text, emailTxt.text != "" else { return }
         guard let password = passwordTxt.text, passwordTxt.text != "" else { return }
@@ -49,8 +53,8 @@ class CreateAccountVC: UIViewController {
                     if success {
                         AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in
                             if(success) {
-                                print(UserDataService.instance.name,
-                                      UserDataService.instance.avatarName)
+                                self.spinner.isHidden = true
+                                self.spinner.stopAnimating()
                                 self.performSegue(withIdentifier: UNWIND, sender: nil)
                             }
                         })
@@ -80,6 +84,9 @@ class CreateAccountVC: UIViewController {
     }
     
     func setupView() {
+        //start with the loading spinner hidden
+         spinner.isHidden = true
+        
         //change color TextField placerholder text
         usernameTxt.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedStringKey.foregroundColor: PURPULE_PLACEHOLDER])
         emailTxt.attributedPlaceholder = NSAttributedString(string: "email", attributes: [NSAttributedStringKey.foregroundColor: PURPULE_PLACEHOLDER])
