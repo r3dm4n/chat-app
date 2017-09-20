@@ -17,10 +17,12 @@ let TO_AVATAR_PICKER = "toAvatarPicker"
 let UNWIND = "unwindToChannel"
 
 //User Defaults
-
 let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedIn"
 let USER_EMAIL = "userEmail"
+
+//Colors
+let PURPULE_PLACEHOLDER = #colorLiteral(red: 0.3266413212, green: 0.4215201139, blue: 0.7752227187, alpha: 0.5)
 
 //Heroku
 let BASE_URL = "https://r3dm4n-chat-app.herokuapp.com/v1/"

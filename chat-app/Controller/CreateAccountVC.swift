@@ -24,7 +24,7 @@ class CreateAccountVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupView()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -78,4 +78,17 @@ class CreateAccountVC: UIViewController {
     @IBAction func onCloseBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: UNWIND, sender: nil)
     }
+    
+    func setupView() {
+        //change color TextField placerholder text
+        usernameTxt.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedStringKey.foregroundColor: PURPULE_PLACEHOLDER])
+        emailTxt.attributedPlaceholder = NSAttributedString(string: "email", attributes: [NSAttributedStringKey.foregroundColor: PURPULE_PLACEHOLDER])
+        passwordTxt.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedStringKey.foregroundColor: PURPULE_PLACEHOLDER])
+    }
+    
+    
+    
+    
+    
+    
 }
