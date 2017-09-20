@@ -13,7 +13,7 @@ class AvatarCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        setupView()
     }
     
     func setupView() {
