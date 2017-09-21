@@ -11,12 +11,7 @@ import Foundation
 class UserDataService {
     
     static let instance = UserDataService()
-    
-//    "name": "JB",
-//    "email": "j@j.com",
-//    "avatarName": "dark5",
-//    "avatarColor" : "hexValue"
-    
+
     public private(set) var id = ""
     public private(set) var avatarColor = ""
     public private(set) var avatarName = ""
