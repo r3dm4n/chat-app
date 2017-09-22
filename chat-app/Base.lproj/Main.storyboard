@@ -122,7 +122,7 @@
                                 <rect key="frame" x="0.0" y="129" width="375" height="423"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CTK-Cf-0JT">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelCell" id="CTK-Cf-0JT" customClass="ChannelCell" customModule="chat_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CTK-Cf-0JT" id="Fhb-6h-H6n">
@@ -142,6 +142,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="UBZ-M6-8m2" id="Wwd-ZS-JXr"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -177,6 +180,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="qUT-Tf-Zmp" id="2G6-np-tjO"/>
+                        <outlet property="tableView" destination="JgU-Gu-t3S" id="773-np-GI0"/>
                         <outlet property="userImg" destination="Ti9-8F-M5w" id="2sN-iM-Ito"/>
                         <segue destination="KAh-Df-5KT" kind="show" identifier="toLogin" id="8D1-eu-dPg"/>
                     </connections>
