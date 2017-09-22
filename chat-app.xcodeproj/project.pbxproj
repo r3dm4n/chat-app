@@ -117,6 +117,7 @@
 		BE44185F1F6FC7A3009A8C67 /* chat-app */ = {
 			isa = PBXGroup;
 			children = (
+				BE70DCD51F73CD2D009DAB33 /* XIBs */,
 				BEDE241E1F71724300FF2626 /* Services */,
 				BE0CFEA71F7028B500401393 /* Utils */,
 				BE87116A1F6FF325006413DE /* Model */,
@@ -131,6 +132,14 @@
 			path = "chat-app";
 			sourceTree = "<group>";
 		};
+		BE70DCD51F73CD2D009DAB33 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				BE70DCD21F73CCE0009DAB33 /* ProfileVC.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
 		BE8711681F6FF314006413DE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +149,6 @@
 				BE761B181F70FCC9006A2ED7 /* CreateAccountVC.swift */,
 				BE79DAC81F728B51007D28F0 /* AvatarPickerVC.swift */,
 				BE70DCD11F73CCE0009DAB33 /* ProfileVC.swift */,
-				BE70DCD21F73CCE0009DAB33 /* ProfileVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
