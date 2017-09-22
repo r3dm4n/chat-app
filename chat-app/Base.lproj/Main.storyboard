@@ -122,7 +122,7 @@
                                 <rect key="frame" x="0.0" y="129" width="375" height="423"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CTK-Cf-0JT">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelCell" id="CTK-Cf-0JT" customClass="ChannelCell" customModule="chat_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CTK-Cf-0JT" id="Fhb-6h-H6n">
@@ -142,6 +142,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="UBZ-M6-8m2" id="Wwd-ZS-JXr"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -177,6 +180,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="qUT-Tf-Zmp" id="2G6-np-tjO"/>
+                        <outlet property="tableView" destination="JgU-Gu-t3S" id="773-np-GI0"/>
                         <outlet property="userImg" destination="Ti9-8F-M5w" id="2sN-iM-Ito"/>
                         <segue destination="KAh-Df-5KT" kind="show" identifier="toLogin" id="8D1-eu-dPg"/>
                     </connections>
@@ -288,15 +292,24 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onLogginPressed:" destination="KAh-Df-5KT" eventType="touchUpInside" id="ZlA-Kr-5Yy"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="4on-1Z-UV8">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8i7-U2-XmA" firstAttribute="top" secondItem="9WQ-2C-Xt9" secondAttribute="bottom" constant="40" id="3FQ-ML-JMh"/>
+                            <constraint firstItem="4on-1Z-UV8" firstAttribute="centerX" secondItem="meD-SR-FB5" secondAttribute="centerX" id="AIJ-7D-9j3"/>
                             <constraint firstItem="9MJ-CH-vcv" firstAttribute="trailing" secondItem="d7m-LL-B6w" secondAttribute="trailing" constant="8" id="YKz-7k-Ba2"/>
                             <constraint firstItem="9WQ-2C-Xt9" firstAttribute="top" secondItem="9MJ-CH-vcv" secondAttribute="top" constant="60" id="ceS-Wq-iUs"/>
                             <constraint firstItem="d7m-LL-B6w" firstAttribute="top" secondItem="9MJ-CH-vcv" secondAttribute="top" id="fcR-gu-1Nb"/>
                             <constraint firstItem="8i7-U2-XmA" firstAttribute="centerX" secondItem="meD-SR-FB5" secondAttribute="centerX" id="jc3-yN-zgC"/>
+                            <constraint firstItem="4on-1Z-UV8" firstAttribute="centerY" secondItem="meD-SR-FB5" secondAttribute="centerY" constant="-100" id="lTT-Pq-bGL"/>
                             <constraint firstItem="pk4-bR-d9i" firstAttribute="centerX" secondItem="meD-SR-FB5" secondAttribute="centerX" id="ldw-IA-t4Q"/>
                             <constraint firstItem="hMT-WO-KyM" firstAttribute="top" secondItem="8i7-U2-XmA" secondAttribute="bottom" constant="40" id="t2B-ce-fVf"/>
                             <constraint firstItem="pk4-bR-d9i" firstAttribute="top" secondItem="hMT-WO-KyM" secondAttribute="bottom" id="t7l-Ed-kyK"/>
@@ -306,6 +319,9 @@
                         <viewLayoutGuide key="safeArea" id="9MJ-CH-vcv"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="9Pe-WF-NZa" id="9bo-sK-8oH"/>
+                        <outlet property="passwordTxt" destination="DRu-3R-MQe" id="k5N-6L-m69"/>
+                        <outlet property="spinner" destination="4on-1Z-UV8" id="qUD-CY-KlD"/>
                         <segue destination="MrC-Tg-wkv" kind="show" identifier="toCreateAccount" id="nRv-IL-lVe"/>
                     </connections>
                 </viewController>
