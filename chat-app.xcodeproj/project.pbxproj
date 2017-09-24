@@ -11,6 +11,7 @@
 		BE0CFEA41F70089B00401393 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9D25B91F6FE968004A807B /* SWRevealViewController.m */; };
 		BE0CFEA61F700CDA00401393 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CFEA51F700CDA00401393 /* GradientView.swift */; };
 		BE0CFEA91F7028C600401393 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CFEA81F7028C600401393 /* Constants.swift */; };
+		BE399BF01F77C95F00D60121 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE399BEF1F77C95F00D60121 /* SocketService.swift */; };
 		BE4418611F6FC7A3009A8C67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4418601F6FC7A3009A8C67 /* AppDelegate.swift */; };
 		BE4418661F6FC7A3009A8C67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4418641F6FC7A3009A8C67 /* Main.storyboard */; };
 		BE4418681F6FC7A3009A8C67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4418671F6FC7A3009A8C67 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		531005C7F0F0E3A788E807EE /* Pods-chat-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chat-app/Pods-chat-app.debug.xcconfig"; sourceTree = "<group>"; };
 		BE0CFEA51F700CDA00401393 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		BE0CFEA81F7028C600401393 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BE399BEF1F77C95F00D60121 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		BE44185D1F6FC7A3009A8C67 /* chat-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chat-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4418601F6FC7A3009A8C67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE4418651F6FC7A3009A8C67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				BEDE241F1F71728600FF2626 /* AuthService.swift */,
 				BE50D4A51F752824004F9A29 /* MessageService.swift */,
 				BE79DAC61F726677007D28F0 /* UserDataService.swift */,
+				BE399BEF1F77C95F00D60121 /* SocketService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE399BF01F77C95F00D60121 /* SocketService.swift in Sources */,
 				BE70DCD31F73CCE0009DAB33 /* ProfileVC.swift in Sources */,
 				BE50D4AA1F7538B3004F9A29 /* ChannelCell.swift in Sources */,
 				BE87116C1F6FF347006413DE /* ChatVC.swift in Sources */,
