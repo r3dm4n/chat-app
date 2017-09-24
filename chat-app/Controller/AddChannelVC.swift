@@ -9,21 +9,35 @@
 import UIKit
 
 class AddChannelVC: UIViewController {
-
+    
+    //Outlets
     @IBOutlet weak var bgView: UIView!
-    @IBOutlet weak var nameTxt: UIStackView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
- 
-    }
+    @IBOutlet weak var nameTxt: UITextField!
     @IBOutlet weak var chanDesc: UITextField!
     
-
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupView()
+    }
+    
     
     @IBAction func onCreateChannelPressed(_ sender: Any) {
+    
     }
+    
     @IBAction func onCloseModalPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func setupView() {
+        let closeTouch = UITapGestureRecognizer(target: self, action: #selector(AddChannelVC.closeTap(_:)))
+        bgView.addGestureRecognizer(closeTouch)
+        
+        nameTxt.attributedPlaceholder = NSAttributedString(string: "name", attributes: [NSAttributedStringKey.foregroundColor : PURPULE_PLACEHOLDER])
+        chanDesc.attributedPlaceholder = NSAttributedString(string: "description", attributes: [NSAttributedStringKey.foregroundColor : PURPULE_PLACEHOLDER])
+    }
+    
+    @objc func closeTap(_ recognizer: UITapGestureRecognizer) {
+        dismiss(animated: true, completion: nil)
     }
 }
