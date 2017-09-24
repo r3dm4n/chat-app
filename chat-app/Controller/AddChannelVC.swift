@@ -10,12 +10,20 @@ import UIKit
 
 class AddChannelVC: UIViewController {
 
+    @IBOutlet weak var bgView: UIView!
+    @IBOutlet weak var nameTxt: UIStackView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+ 
     }
+    @IBOutlet weak var chanDesc: UITextField!
+    
 
 
-
+    
+    @IBAction func onCreateChannelPressed(_ sender: Any) {
+    }
+    @IBAction func onCloseModalPressed(_ sender: Any) {
+    }
 }

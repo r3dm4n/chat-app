@@ -17,6 +17,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddChannelVC" customModule="chat_app" customModuleProvider="target">
             <connections>
+                <outlet property="bgView" destination="C93-UD-jOy" id="b99-ha-n8m"/>
+                <outlet property="chanDesc" destination="2py-B7-I18" id="U2Q-NM-QjG"/>
+                <outlet property="nameTxt" destination="n6g-sJ-EN5" id="bI5-PL-GHr"/>
+                <outlet property="onCreateChannelPressed" destination="ebG-ik-dKL" id="ppH-VC-lIZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -86,6 +90,9 @@
                                 <constraint firstAttribute="height" constant="30" id="r9Q-aB-OEn"/>
                             </constraints>
                             <state key="normal" image="closeButton"/>
+                            <connections>
+                                <action selector="onCloseModalPressed:" destination="-1" eventType="touchUpInside" id="vrI-cS-3pS"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebG-ik-dKL" customClass="RoundedButton" customModule="chat_app" customModuleProvider="target">
                             <rect key="frame" x="42.5" y="250" width="250" height="50"/>
@@ -103,6 +110,9 @@
                                     <real key="value" value="5"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onCreateChannelPressed:" destination="-1" eventType="touchUpInside" id="4wC-cb-Ee0"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
