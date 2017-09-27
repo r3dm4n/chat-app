@@ -17,6 +17,11 @@ class ChatVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.bindToKeyboard()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ChatVC.handleTap))
+        view.addGestureRecognizer(tap)
+        
+        
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         //drag to open/close
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
@@ -42,6 +47,10 @@ class ChatVC: UIViewController {
     
     @objc func channelSelected(_ notif: Notification) {
         updateWithChannel()
+    }
+    
+    @objc func handleTap() {
+        view.endEditing(true)
     }
     
     func updateWithChannel() {
