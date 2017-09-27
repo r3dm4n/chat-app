@@ -35,6 +35,7 @@
 		BE87116E1F6FF35A006413DE /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE87116D1F6FF35A006413DE /* ChannelVC.swift */; };
 		BEDE24201F71728600FF2626 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE241F1F71728600FF2626 /* AuthService.swift */; };
 		BEEE54821F7C0F050084DA06 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE54811F7C0F050084DA06 /* KeyboardBoundView.swift */; };
+		BEEE54841F7C13860084DA06 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE54831F7C13860084DA06 /* MessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		BE9D25B91F6FE968004A807B /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		BEDE241F1F71728600FF2626 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		BEEE54811F7C0F050084DA06 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		BEEE54831F7C13860084DA06 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		E68A4267196FEAA1578E2176 /* Pods_chat_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chat_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -180,6 +182,7 @@
 				BE79DACC1F72AA29007D28F0 /* CircleImage.swift */,
 				BE50D4A91F7538B3004F9A29 /* ChannelCell.swift */,
 				BEEE54811F7C0F050084DA06 /* KeyboardBoundView.swift */,
+				BEEE54831F7C13860084DA06 /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				BE50D4AA1F7538B3004F9A29 /* ChannelCell.swift in Sources */,
 				BE87116C1F6FF347006413DE /* ChatVC.swift in Sources */,
 				BE79DAC91F728B51007D28F0 /* AvatarPickerVC.swift in Sources */,
+				BEEE54841F7C13860084DA06 /* MessageCell.swift in Sources */,
 				BE79DAC51F71A6B7007D28F0 /* RoundedButton.swift in Sources */,
 				BE831C0D1F7BAC3100A2C680 /* Message.swift in Sources */,
 				BE50D4A81F75287A004F9A29 /* Channel.swift in Sources */,
