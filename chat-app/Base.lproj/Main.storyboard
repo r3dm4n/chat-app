@@ -82,6 +82,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dL-Yc-o2o">
                                 <rect key="frame" x="337" y="632" width="30" height="30"/>
                                 <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="onSendMessagePressed:" destination="Jgt-8G-PzI" eventType="touchUpInside" id="vth-ny-YPf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -100,6 +103,7 @@
                     <connections>
                         <outlet property="channelNameLbl" destination="ebs-od-c5Q" id="fBm-eZ-80m"/>
                         <outlet property="menuBtn" destination="hox-cu-mSX" id="FZ4-qw-KWU"/>
+                        <outlet property="messageTxtBox" destination="QbD-QD-CM4" id="CPX-GD-hgw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZ3-hL-z2v" userLabel="First Responder" sceneMemberID="firstResponder"/>

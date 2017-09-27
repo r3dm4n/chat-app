@@ -12,6 +12,7 @@ class ChatVC: UIViewController {
     
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var channelNameLbl: UILabel!
+    @IBOutlet weak var messageTxtBox: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +49,10 @@ class ChatVC: UIViewController {
         channelNameLbl.text = "#\(channelName)"
         getMessages()
     }
+    
+    @IBAction func onSendMessagePressed(_ sender: Any) {
+    }
+    
     
     func onLoginGetMessages() {
         MessageService.instance.findAllChannel { (success) in
