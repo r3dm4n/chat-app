@@ -34,6 +34,7 @@
 		BE87116C1F6FF347006413DE /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE87116B1F6FF347006413DE /* ChatVC.swift */; };
 		BE87116E1F6FF35A006413DE /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE87116D1F6FF35A006413DE /* ChannelVC.swift */; };
 		BEDE24201F71728600FF2626 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE241F1F71728600FF2626 /* AuthService.swift */; };
+		BEEE54821F7C0F050084DA06 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE54811F7C0F050084DA06 /* KeyboardBoundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		BE9D25B81F6FE968004A807B /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		BE9D25B91F6FE968004A807B /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		BEDE241F1F71728600FF2626 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		BEEE54811F7C0F050084DA06 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		E68A4267196FEAA1578E2176 /* Pods_chat_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chat_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -177,6 +179,7 @@
 				BE79DACA1F728DEB007D28F0 /* AvatarCell.swift */,
 				BE79DACC1F72AA29007D28F0 /* CircleImage.swift */,
 				BE50D4A91F7538B3004F9A29 /* ChannelCell.swift */,
+				BEEE54811F7C0F050084DA06 /* KeyboardBoundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEEE54821F7C0F050084DA06 /* KeyboardBoundView.swift in Sources */,
 				BE399BF01F77C95F00D60121 /* SocketService.swift in Sources */,
 				BE70DCD31F73CCE0009DAB33 /* ProfileVC.swift in Sources */,
 				BE50D4AA1F7538B3004F9A29 /* ChannelCell.swift in Sources */,
