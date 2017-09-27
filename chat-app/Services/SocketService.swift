@@ -32,7 +32,7 @@ class SocketService: NSObject {
         completion(true)
     }
     
-    func getChnnel(completion: @escaping CompletionHandler) {
+    func getChannel(completion: @escaping CompletionHandler) {
         socket.on("channelCreated") { (dataArray, ack) in
             guard let channelName = dataArray[0] as? String else { return }
             guard let channelDesc = dataArray[1] as? String else { return }
@@ -44,12 +44,9 @@ class SocketService: NSObject {
         }
     }
     
-    
+    func
     
   
-    
-    
-    
-
+   
     
 }
