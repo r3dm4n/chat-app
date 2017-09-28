@@ -149,9 +149,17 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nm-2y-R1P">
+                                <rect key="frame" x="8" y="621" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="QbD-QD-CM4" firstAttribute="top" secondItem="6Nm-2y-R1P" secondAttribute="bottom" constant="6" id="13A-fX-rgf"/>
+                            <constraint firstItem="6Nm-2y-R1P" firstAttribute="leading" secondItem="Rl2-KS-eyJ" secondAttribute="leading" constant="8" id="2eU-0z-gze"/>
                             <constraint firstItem="Rl2-KS-eyJ" firstAttribute="trailing" secondItem="QbD-QD-CM4" secondAttribute="trailing" id="63i-Sm-XPU"/>
                             <constraint firstItem="7dL-Yc-o2o" firstAttribute="centerY" secondItem="QbD-QD-CM4" secondAttribute="centerY" id="8xx-kE-XPI"/>
                             <constraint firstItem="KxT-RH-M3b" firstAttribute="top" secondItem="STo-EZ-I1M" secondAttribute="bottom" id="9kV-bp-nLb"/>
@@ -173,6 +181,7 @@
                         <outlet property="messageTxtBox" destination="QbD-QD-CM4" id="CPX-GD-hgw"/>
                         <outlet property="sendBtn" destination="7dL-Yc-o2o" id="Nfl-IP-Rsi"/>
                         <outlet property="tableView" destination="KxT-RH-M3b" id="UXf-r1-jr9"/>
+                        <outlet property="typingUsersLbl" destination="6Nm-2y-R1P" id="zot-Wa-gqa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZ3-hL-z2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
