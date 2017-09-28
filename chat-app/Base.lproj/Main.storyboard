@@ -78,6 +78,9 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="messageBoxEditing:" destination="Jgt-8G-PzI" eventType="editingDidEnd" id="fzO-Hn-3qJ"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dL-Yc-o2o">
                                 <rect key="frame" x="337" y="632" width="30" height="30"/>
@@ -104,20 +107,20 @@
                                                         <constraint firstAttribute="width" constant="50" id="oVT-Vm-2hH"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="r3d" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRF-1X-H29">
-                                                    <rect key="frame" x="70" y="8" width="25" height="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="r3d" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRF-1X-H29">
+                                                    <rect key="frame" x="70" y="8" width="25" height="23"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnA-FQ-JHl">
-                                                    <rect key="frame" x="70" y="37" width="285" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnA-FQ-JHl">
+                                                    <rect key="frame" x="70" y="39" width="285" height="18"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="12:33 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgD-yt-IMz">
-                                                    <rect key="frame" x="101" y="9" width="61" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:33 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgD-yt-IMz">
+                                                    <rect key="frame" x="101" y="10.5" width="61" height="17"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -126,6 +129,7 @@
                                             <constraints>
                                                 <constraint firstItem="wRF-1X-H29" firstAttribute="leading" secondItem="3R6-Uo-yuI" secondAttribute="trailing" constant="12" id="05G-Jd-8BR"/>
                                                 <constraint firstItem="3R6-Uo-yuI" firstAttribute="leading" secondItem="7Q2-HR-Jaj" secondAttribute="leadingMargin" id="D6F-mP-o5E"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xgD-yt-IMz" secondAttribute="trailing" constant="20" symbolic="YES" id="J4a-hp-hr8"/>
                                                 <constraint firstItem="cnA-FQ-JHl" firstAttribute="leading" secondItem="3R6-Uo-yuI" secondAttribute="trailing" constant="12" id="X0Y-jM-rdv"/>
                                                 <constraint firstItem="xgD-yt-IMz" firstAttribute="leading" secondItem="wRF-1X-H29" secondAttribute="trailing" constant="6" id="cKF-6N-c0K"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="cnA-FQ-JHl" secondAttribute="trailing" constant="12" id="gQ4-YZ-joZ"/>
@@ -140,7 +144,7 @@
                                             <outlet property="messageBodyLbl" destination="cnA-FQ-JHl" id="Ze4-qF-8aZ"/>
                                             <outlet property="timeStampLbl" destination="xgD-yt-IMz" id="lK7-Py-A8u"/>
                                             <outlet property="userImg" destination="3R6-Uo-yuI" id="21d-Mv-mar"/>
-                                            <outlet property="userNameL" destination="wRF-1X-H29" id="KHQ-FB-ccR"/>
+                                            <outlet property="userNameLbl" destination="wRF-1X-H29" id="g2d-la-pgc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -167,6 +171,7 @@
                         <outlet property="channelNameLbl" destination="ebs-od-c5Q" id="fBm-eZ-80m"/>
                         <outlet property="menuBtn" destination="hox-cu-mSX" id="FZ4-qw-KWU"/>
                         <outlet property="messageTxtBox" destination="QbD-QD-CM4" id="CPX-GD-hgw"/>
+                        <outlet property="sendBtn" destination="7dL-Yc-o2o" id="Nfl-IP-Rsi"/>
                         <outlet property="tableView" destination="KxT-RH-M3b" id="UXf-r1-jr9"/>
                     </connections>
                 </viewController>
